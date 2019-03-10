@@ -1,6 +1,8 @@
 window.addEventListener('DOMContentLoaded', function () {
     'use strict';
 
+    // PRELOADER
+
     document.body.onload = function () {
         setTimeout(function () {
             let preloader = document.querySelector('.preloader');
@@ -9,6 +11,8 @@ window.addEventListener('DOMContentLoaded', function () {
             }
         }, 1000);
     };
+
+    // BURST
 
     let burst = document.querySelectorAll('.burst');
 
@@ -20,4 +24,24 @@ window.addEventListener('DOMContentLoaded', function () {
             this.classList.remove('animated', 'rubberBand')
         })
     });
+
+    // NAVIGATION
+
+    let burger = document.querySelector('.burger');
+    let menu = document.querySelector('.menu');
+    burger.addEventListener('click', function () {
+
+        burger.classList.toggle('active');
+
+        if (menu.classList.contains('close')) {
+            menu.classList.add('open', 'animated', 'pulse');
+            menu.classList.remove('close');
+        } else {
+            menu.classList.remove('open', 'animated', 'pulse');
+            menu.classList.add('close');
+        }
+    });
+
+
+
 });
