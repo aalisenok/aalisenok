@@ -1,42 +1,44 @@
 /* lg-размер (<=1199px) */
-@media (max-width: 1199px) {}
+@media (max-width: 1199px) {
+}
 
 /* md-размер (<=991px) */
 @media (max-width: 991px) {
-  .preview {
-    margin-left: 5rem;
-    margin-bottom: 5rem;
-  }
+    .preview {
+        margin-left: 5rem;
+        margin-bottom: 5rem;
+    }
 }
 
 /* sm-размер (<=768px) */
 @media (max-width: 767px) {
-  .preview {
-    margin-left: 0;
-    margin-bottom: 3rem;
-  }
-  .symbol {
-    font-size: 2.5rem;
-  }
+    .preview {
+        margin-left: 0;
+        margin-bottom: 3rem;
+    }
 
+    .symbol {
+        font-size: 2.5rem;
+    }
 }
 
 /* xs-размер (<=575px) */
 @media (max-width: 575px) {
 
-  .symbol {
-    font-size: 1.5rem;
-  }
+    .symbol {
+        font-size: 1.5rem;
+    }
 
-  .social__svg {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-  .menu {
-    display: none;
-  }
+    .social__svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 
-  .burger {
-    display: block;
-  }
+    .menu {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
 }
