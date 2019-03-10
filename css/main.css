@@ -200,13 +200,13 @@
 
 .preview {
     font-size: 0;
-    margin-left: 3rem;
-    margin-bottom: 5rem;
+    margin-left: 10rem;
+    margin-bottom: 10rem;
 }
 
 .symbol {
     display: inline-block;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #736f6f;
     font-family: 'Exo 2', sans-serif;
     line-height: 2;
@@ -433,7 +433,7 @@
     text-transform: uppercase;
     color: #736f6f;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 700;
     margin: 0 0.3125rem;
     -webkit-transition: ease-in 0.3s;
@@ -547,8 +547,8 @@
 }
 
 .social__svg {
-    width: 1rem;
-    height: 1rem;
+    width: 2rem;
+    height: 2rem;
     fill: #736f6f;
     -webkit-transition: ease-in 0.3s;
     -moz-transition: ease-in 0.3s;
