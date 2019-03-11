@@ -50,6 +50,7 @@
 .none {
     visibility: hidden;
     opacity: 0;
+    overflow: hidden;
 }
 
 @-moz-keyframes load {
@@ -183,7 +184,7 @@
 /* ========== HERO ========== */
 
 .hero {
-    background: #000000 url("../img/bg-home.jpg") no-repeat;
+    background: #000000 url("../img/index.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
     position: absolute;
@@ -197,6 +198,12 @@
     flex-direction: column;
     justify-content: flex-end;
 }
+.hero--about {
+    background: #000000 url("../img/about.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 
 .preview {
     font-size: 0;
