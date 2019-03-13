@@ -193,22 +193,21 @@
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    padding: 1.25rem;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-}
-.hero--about {
-    background: #000000 url("../img/about.jpg") no-repeat;
-    background-position: center center;
-    background-size: cover;
+    justify-content: center;
 }
 
+.middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
 
 .preview {
     font-size: 0;
-    margin-left: 10rem;
-    margin-bottom: 10rem;
 }
 
 .symbol {
@@ -221,7 +220,6 @@
     text-transform: uppercase;
     -webkit-transition: ease-in 0.3s;
     -moz-transition: ease-in 0.3s;
-    -ms-transition: ease-in 0.3s;
     -o-transition: ease-in 0.3s;
     transition: ease-in 0.3s;
     cursor: crosshair;
@@ -393,6 +391,31 @@
     animation-name: rubberBand;
 }
 
+/* ========== PREVIEW ========== */
+.hero--about {
+    background: #000000 url("../img/about.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.about-preview {
+    max-width: 30rem;
+}
+
+.about-text,
+.about-title,
+.skills {
+    color: #736f6f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: normal;
+    margin-bottom: 1.25rem;
+}
+
+.about-title {
+    font-weight: 700;
+}
+
 /* ========== NAVIGATION ========== */
 .nav {
     display: flex;
@@ -536,16 +559,8 @@
 /* ========== SOCIAL ========== */
 
 .social {
-    position: absolute;
-    right: 1rem;
-    top: 50%;
     display: flex;
     flex-direction: column;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 
 .social__link {
