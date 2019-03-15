@@ -40,4 +40,19 @@ window.addEventListener("DOMContentLoaded", function () {
             menu.classList.add("close");
         }
     });
+
+    // SLIDER
+
+    let slideIndex = 0,
+        slide = document.querySelectorAll('.slider__item'),
+        prev = document.querySelector(".prev"),
+        next = document.querySelector("next");
+
+    show(slideIndex);
+    function show(n) {
+        slide.forEach((item) => item.style.display = "none");
+        console.log(slide);
+
+        slide[slideIndex].style.display = "block";
+    }
 });
