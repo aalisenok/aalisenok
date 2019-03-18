@@ -421,53 +421,109 @@
 .hero--projects {
     background: #000;
 }
+
 .preview--projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 100%;
 }
+
 .slider {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     position: relative;
 }
+
 .slider__item {
-    width: 90%;
-    background: #b3d4fc;
-    border: 1rem solid skyblue;
     border-radius: 1rem;
-    box-sizing: border-box;
+    max-width: 80%;
+    height: 30rem;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    transition: background-position 5s linear;
+}
+.el {
+    background: url("../img/2.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+.ee {
+    background: url("../img/3.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+.slider__item:hover {
+    background-position: bottom;
+}
+.text-top,
+.text-bottom {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background: rgba(115, 111, 111, 0.5);
+    height: 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+.text-top {
+    top: 0;
+}
+.text-bottom {
+    bottom: 0;
+}
+.slider__item:hover .text-top,
+.slider__item:hover .text-bottom {
+    height: 50%;
+    visibility: visible;
+}
+.slider__svg {
+    width: 2rem;
+    height: 2rem;
+    fill: #000;
+    margin-right: 1rem;
 }
 .slider__img {
     width: 100%;
     height: auto;
 }
+
 .next,
 .prev {
-    width: 1rem;
+    width: 3rem;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
 }
+
 .prev {
     left: 5%;
 }
+
 .next {
-    right: 10%;
+    right: 5%;
 }
+
 .prev__svg,
 .next__svg {
     fill: #736f6f;
+    transition: 0.3s linear;
 }
-
+.prev__svg:hover,
+.next__svg:hover {
+    fill: #860d0d;
+}
 /* ========== NAVIGATION ========== */
 .nav {
     display: flex;
     justify-content: center;
-}
-.prev {
-
 }
 
 /* ========== BURGER ========== */
@@ -484,7 +540,7 @@
     height: 0.125rem;
     margin-top: 0.325rem;
     width: 1.875rem;
-    transition: transform 0.3s 0.1s, background-color 0.3s 0.1s, opacity 0.3s;
+    transition: transform 0.3s 0.1s linear, background-color 0.3s 0.1s linear, opacity 0.3s linear;
 }
 
 .active .burger__line:nth-child(1) {

@@ -43,16 +43,35 @@ window.addEventListener("DOMContentLoaded", function () {
 
     // SLIDER
 
-    let slideIndex = 0,
-        slide = document.querySelectorAll('.slider__item'),
+    let sliderIndex = 1,
+        slider = document.querySelectorAll('.slider__item'),
         prev = document.querySelector(".prev"),
-        next = document.querySelector("next");
+        next = document.querySelector(".next");
 
-    show(slideIndex);
+    show(sliderIndex);
+
+
     function show(n) {
-        slide.forEach((item) => item.style.display = "none");
-        console.log(slide);
+        if (n > slider.length) {
+            sliderIndex = 1;
+        }
+        if (n < 1) {
+            sliderIndex = slider.length;
+        }
+        slider.forEach((item) => item.style.display = "none");
 
-        slide[slideIndex].style.display = "block";
+        slider[sliderIndex - 1].style.display = "block";
     }
+
+    function plusSlider(n) {
+        show((sliderIndex += n));
+    }
+
+    prev.addEventListener('click', function () {
+        plusSlider(-1);
+    });
+    next.addEventListener('click', function () {
+        plusSlider(1);
+    });
+
 });
