@@ -1,0 +1,96 @@
+.products-list {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 40%;
+  &__item {
+    margin-bottom: 2rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 60px rgba(15, 65, 36, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(145, 145, 145, 0.3);
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+  &:hover {
+    transform: scale(1.2);
+    border: 1px solid $green;
+    .product__time {
+      color: $red;
+      opacity: 0.7;
+    }
+    .product__time-format {
+      color: $green;
+    }
+  }
+  &__img {
+    max-width: 20%;
+  }
+  &__title {
+    color: $green;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+    letter-spacing: 0.07rem;
+    margin-bottom: 0.5rem;
+  }
+  &__text {
+    color: $dark-gray;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.055rem;
+    margin-bottom: -0.3rem;
+  }
+  &__gram, &__calories {
+    color: $green;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.055rem;
+  }
+  &__point {
+    display: inline-block;
+    vert-align: middle;
+    width: 0.313rem;
+    height: 0.313rem;
+    border-radius: 50%;
+    background-color: $light-gray;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+  }
+  &__time-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  &__time {
+    color: $light-gray;
+    font-size: 1.563rem;
+    font-weight: 700;
+    line-height: 2.1rem;
+    letter-spacing: 0.11rem;
+    transition: 0.5s ease;
+  }
+  &__time-format {
+    color: $light-gray;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 2.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07rem;
+    transition: 0.5s ease;
+
+  }
+
+}
+

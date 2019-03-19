@@ -1,0 +1,20 @@
+.footer {
+  background: $green url("../img/content/bg-footer.jpg") center no-repeat;
+  background-size: cover;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  &__description {
+    text-align: center;
+    margin-bottom: 3.5rem;
+    max-width: 75%;
+  }
+}

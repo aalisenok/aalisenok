@@ -1,0 +1,47 @@
+.hero {
+  background: $green url("../img/content/bg-hero.png") center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 56%;
+  max-width: 56%;
+  margin-top: 7.5rem;
+  &__icon {
+    width: 6.938rem;
+    height: 6.938rem;
+    box-shadow: 0 0 60px rgba(48, 60, 17, 0.15);
+    border-radius: 1.6rem;
+    margin-bottom: 3.125rem;
+  }
+  &__title {
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: 0.16rem;
+    line-height: 5rem;
+    margin-bottom: 1.5rem;
+    &--bold {
+      font-weight: 700;
+    }
+  }
+  &__description {
+    margin-bottom: 3.5rem;
+  }
+}
+
+.download {
+  &__app-store {
+    margin-right: 1.875rem;
+  }
+}
+

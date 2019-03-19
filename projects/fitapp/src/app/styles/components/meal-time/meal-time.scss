@@ -1,0 +1,19 @@
+.meal-time {
+  padding-top: 8.75rem;
+  padding-bottom: 8.75rem;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+  &__title {
+    margin-bottom: 1.5rem;
+  }
+}
+

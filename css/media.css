@@ -15,40 +15,49 @@
         font-size: 0.625rem;
         margin-bottom: 0.625rem;
     }
-}
 
-@media (max-width: 575px) {
-    .hero {
-        padding: 1rem;
+    .next,
+    .prev {
+        width: 1rem;
     }
 
-    .symbol {
-        font-size: 1.5rem;
+    .slider__item {
+        height: 20rem;
     }
 
-    .social__svg {
-        width: 1.5rem;
-        height: 1.5rem;
+    @media (max-width: 575px) {
+        .hero {
+            padding: 1rem;
+        }
+
+        .symbol {
+            font-size: 1.5rem;
+        }
+
+        .social__svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .burger {
+            display: block;
+        }
     }
 
-    .menu {
-        display: none;
-    }
+    @media (max-width: 420px) {
+        .symbol {
+            font-size: 1rem;
+        }
 
-    .burger {
-        display: block;
-    }
-}
+        .about-text,
+        .about-title,
+        .skills {
+            font-size: 0.5rem;
+        }
 
-@media (max-width: 420px) {
-    .symbol {
-        font-size: 1rem;
     }
-
-    .about-text,
-    .about-title,
-    .skills {
-        font-size: 0.5rem;
-    }
-
 }

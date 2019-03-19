@@ -1,0 +1,21 @@
+.btn {
+  display: inline-block;
+  background-color: $white;
+  color: $green;
+  font-weight: 700;
+  line-height: 1.125rem;
+  letter-spacing: 0.045rem;
+  padding: 0.75rem 2.25rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 60px rgba(15, 65, 36, 0.2);
+  }
+}
+
+
+
+
+

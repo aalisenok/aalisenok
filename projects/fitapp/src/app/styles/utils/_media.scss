@@ -1,0 +1,259 @@
+// Large devices (desktops, less than 1200px)
+@media (max-width: $desktops) {
+  /* CSS for widths from 992px to 1199px */
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: $tablets) {
+  /* CSS for widths from от 768px to 991px */
+  .nav {
+    &--opened .menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -4rem;
+      left: -15px;
+      right: -15px;
+      background: $green;
+      height: 100vh;
+      &__item {
+        margin-bottom: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.5rem;
+        &:hover {
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .menu {
+    display: none;
+    &__btn {
+      position: absolute;
+      left: 1rem;
+      top: 4rem;
+    }
+  }
+  .burger {
+    display: block;
+  }
+  .hero {
+    align-items: center;
+    &__content {
+      justify-content: center;
+    }
+    &__img {
+      display: none;
+    }
+  }
+  .intro-text {
+    flex: 0 0 100%;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+  }
+  .counter-app {
+    padding-bottom: 3rem;
+    &__content {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .ellipse {
+    margin-right: 0;
+    margin-bottom: 10rem;
+    &__img {
+      left: -5.3rem;
+    }
+  }
+  .icon-list {
+    left: 0;
+  }
+  .text-list {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  .meal-time {
+    &__content {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &__text {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    &__products {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  .product {
+    &__img {
+      margin-bottom: 1rem;
+    }
+    &__info {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: $landscape-phones) {
+  /* CSS for widths from 480px to 767px */
+  .ellipse {
+    &__img {
+      max-width: 75%;
+    }
+  }
+  .icon-list {
+    width: 24.2rem;
+    height: 24.2rem;
+    &__item {
+      &--notification {
+        right: 5rem;
+        top: -1rem;
+      }
+      &--calendar {
+        top: 3rem;
+        right: 0.5rem;
+      }
+      &--growth {
+        right: -2rem;
+        top: 10rem;
+      }
+      &--favorite {
+        right: 0.5rem;
+        bottom: 3rem;
+      }
+      &--interface {
+        right: 5rem;
+        bottom: -1rem;
+      }
+    }
+  }
+  .product {
+    flex-direction: column;
+    text-align: center;
+    &__img {
+      max-width: 30%;
+    }
+    &__time-info {
+      align-items: normal;
+    }
+  }
+}
+
+// Extra small devices (portrait phones, less than 480px)
+@media (max-width: $phones) {
+  /* CSS for widths from 480px (inclusive) */
+  .nav {
+    &--opened .menu {
+      top: 0;
+    }
+  }
+  .menu__btn {
+    top: 0;
+  }
+  .intro-text {
+    margin-top: 4rem;
+    &__icon {
+      display: none;
+    }
+    &__title {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+    &__description {
+      margin-bottom: 1rem;
+    }
+  }
+  .download {
+    display: flex;
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+  .counter-app {
+    padding-top: 6.3rem;
+  }
+  .ellipse {
+    margin-bottom: 5rem;
+    &__img {
+      top: -4.5rem;
+      left: -4.3rem;
+    }
+  }
+  .icon-list {
+    width: 15.2rem;
+    height: 15.2rem;
+    &__item {
+      &:hover {
+        transform: scale(1.1);
+      }
+      &--notification {
+        right: 4rem;
+        top: -1rem;
+      }
+      &--calendar {
+        top: 1.5rem;
+        right: 0;
+      }
+      &--growth {
+        right: -1.5rem;
+        top: 6rem;
+      }
+      &--favorite {
+        right: 0;
+        bottom: 1.5rem;
+      }
+      &--interface {
+        right: 4rem;
+        bottom: -1rem;
+      }
+    }
+    &__item.slick-slide {
+      width: 3rem !important;
+      height: 3rem !important;
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+  }
+  .plan-your-diet {
+    padding-top: 3rem;
+    &__description {
+      margin-bottom: 3rem;
+    }
+  }
+  .meal-time {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    &__products {
+      flex: 0 0 70%;
+      max-width: 70%;
+    }
+  }
+  .footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+}

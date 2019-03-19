@@ -1,0 +1,96 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea {
+  vertical-align: middle;
+}
+
+textarea {
+  resize: none;
+}
+
+section {
+  position: relative;
+}
+
+input,
+select,
+button {
+  outline: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  letter-spacing: $letter-spacing;
+  color: $white;
+  min-width: 320px;
+
+}
+
+.container {
+  max-width: $max-width;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: $font-weight;
+  line-height: 3.75rem;
+  color: $white;
+  letter-spacing: 0.09rem;
+  &--dark-gray {
+    color: $dark-gray;
+  }
+  &--green {
+    color: $green;
+  }
+  &--bold {
+    font-weight: 700;
+    letter-spacing: 0.09rem;
+  }
+}
+
+.description {
+  &--dark-gray {
+    color: $dark-gray;
+  }
+}

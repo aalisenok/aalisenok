@@ -441,21 +441,11 @@
     position: relative;
     transition: background-position 5s linear;
 }
-.el {
-    background: url("../img/2.jpg");
-    background-position: top;
-    background-size: cover;
-}
-
-.ee {
-    background: url("../img/3.jpg");
-    background-position: top;
-    background-size: cover;
-}
 
 .slider__item:hover {
     background-position: bottom;
 }
+
 .text-top,
 .text-bottom {
     position: absolute;
@@ -467,28 +457,33 @@
     height: 0;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 700;
     visibility: hidden;
     transition: all 0.3s linear;
 }
+
 .text-top {
     top: 0;
 }
+
 .text-bottom {
     bottom: 0;
 }
+
 .slider__item:hover .text-top,
 .slider__item:hover .text-bottom {
     height: 50%;
     visibility: visible;
 }
+
 .slider__svg {
-    width: 2rem;
-    height: 2rem;
+    width: 1rem;
+    height: 1rem;
     fill: #000;
     margin-right: 1rem;
 }
+
 .slider__img {
     width: 100%;
     height: auto;
@@ -504,11 +499,11 @@
 }
 
 .prev {
-    left: 5%;
+    left: 3%;
 }
 
 .next {
-    right: 5%;
+    right: 3%;
 }
 
 .prev__svg,
@@ -516,10 +511,37 @@
     fill: #736f6f;
     transition: 0.3s linear;
 }
+
 .prev__svg:hover,
 .next__svg:hover {
     fill: #860d0d;
 }
+
+.fitapp {
+    background: url("../img/projects/fitapp.jpg");
+    background-position: top;
+    background-size: cover;
+
+}
+
+.skype {
+    background: url("../img/projects/skype.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+.bino {
+    background: url("../img/projects/bino.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+.fashion {
+    background: url("../img/projects/fashion.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
 /* ========== NAVIGATION ========== */
 .nav {
     display: flex;

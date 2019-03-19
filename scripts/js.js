@@ -50,7 +50,6 @@ window.addEventListener("DOMContentLoaded", function () {
 
     show(sliderIndex);
 
-
     function show(n) {
         if (n > slider.length) {
             sliderIndex = 1;
