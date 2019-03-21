@@ -391,7 +391,7 @@
     animation-name: rubberBand;
 }
 
-/* ========== PREVIEW ========== */
+/* ========== About ========== */
 .hero--about {
     background: #000000 url("../img/about.jpg") no-repeat;
     background-position: center center;
@@ -416,7 +416,7 @@
     font-weight: 700;
 }
 
-/* ========== PREVIEW ========== */
+/* ========== Projects ========== */
 
 .hero--projects {
     background: #000;
@@ -541,6 +541,10 @@
     background-position: top;
     background-size: cover;
 }
+
+/* ========== Contact ========== */
+
+
 
 /* ========== NAVIGATION ========== */
 .nav {
