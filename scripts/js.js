@@ -73,4 +73,26 @@ window.addEventListener("DOMContentLoaded", function () {
         plusSlider(1);
     });
 
+    // FORM
+
+    $(document).ready(function() {
+
+        $("#callback").submit(function() {
+            $.ajax({
+                type: "POST",
+                url: "mail.php",
+                data: $(this).serialize()
+            }).done(function() {
+                alert("Спасибо за заявку!");
+                setTimeout(function() {
+
+                }, 1000);
+            });
+            return false;
+        });
+
+
+    });
+
+
 });
