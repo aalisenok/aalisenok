@@ -34,19 +34,16 @@
                 <span class="burst symbol" aria-hidden="true">c</span>
                 <span class="burst symbol" aria-hidden="true">t</span>
             </h1>
-            <form class="form" id="callback">
-                <label for="">
-                    <input type="text" placeholder="Name" required>
-                </label>
-                <label for="">
-                    <input type="email" placeholder="Email" required>
-                </label>
-                <label for="">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                </label>
-                <label for="">
-                    <input type="submit" value="SEND">
-                </label>
+            <form class="contact-form" id="callback"><h3 class="form-title">Оставить заявку</h3><label
+                    class="contact-form__label">Ваше имя<input class="contact-form__item" type="text" name="name"
+                                                               required="required"></label><label
+                    class="contact-form__label">Ваш E-mail<input class="contact-form__item" type="text" name="email"
+                                                                 required="required"></label><label
+                    class="contact-form__label">Комментарий к заказу<textarea
+                    class="contact-form__item contact-textarea" name="message"></textarea></label>
+                <div class="contact-form__button">
+                    <button class="button" type="submit">Отправить заявку</button>
+                </div>
             </form>
 
         </div>
