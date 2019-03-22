@@ -544,6 +544,10 @@
 
 /* ========== Contact ========== */
 
+.form {
+    display: flex;
+    flex-direction: column;
+}
 
 
 /* ========== NAVIGATION ========== */

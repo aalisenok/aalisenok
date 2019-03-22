@@ -1,13 +1,34 @@
+<html>
+<head>
+<title>Форма заявки с сайта</title>
+</head>
+<body>
 <?php
-$name  = "Andrey"
-$recepient = "aalisenak@gmail.com";
-$sitename  = "sitename";
-$subject   = "New message \"$sitename\"";
-$name = trim($_POST["name"]);
-$email = trim($_POST["email"]);
-$message = trim($_POST["message"]);
-$message = "E-mail: $email \nName: $name \nMessage: $message";
-mail($recepient, $subject, $message, "From: $ame <$recepient>" . "\r\n" . "Reply-To: $recepient" . "\r\n" . "X-Mailer: PHP/" . phpversion() . "\r\n" . "Content-type: text/html; charset=\"utf-8\"");
+//проверяем, существуют ли переменные в массиве POST
+if(!isset($_POST['name']) and !isset($_POST['email'])){
+ ?> <form action="send.php" method="post">
+<input type="text" name="name" placeholder="Name" required>
+<input type="text" name="email" placeholder="Email" required>
+<input type="submit" value="Отправить">
+</form>
 
+<?php
+} else {
+ //показываем форму
+ $name = $_POST['name'];
+ $email = $_POST['email'];
+ $name = htmlspecialchars($name);
+ $email = htmlspecialchars($email);
+ $name = urldecode($name);
+ $email = urldecode($email);
+ $name = trim($name);
+ $email = trim($email);
+ if (mail("aalisenak@gmail.com", "Заявка с сайта", "Name:".$name.". Email: ".$email ,"From: example2@mail.ru \r\n")){
+ echo "Сообщение успешно отправлено";
+ } else {
+ echo "При отправке сообщения возникли ошибки";
+ }
+}
 ?>
-
+</body>
+</html>
